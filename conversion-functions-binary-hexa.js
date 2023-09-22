@@ -17,7 +17,9 @@ function decimalToHexadecimal(blob) {
 
 /* Base 2 to base 10 */
 function binaryToDecimal(blob) {
-  let newInput = blob.split("").splice(2).join("");
+  let newInput = blob.slice(2);
+  // Or:
+  // let newInput = blob.split("").splice(2).join("");
   return parseInt(newInput, 2);
 }
 
